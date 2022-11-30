@@ -10,7 +10,6 @@ int main()
         if (ch=='A')
         {
             initialize();
-            printf("\n");
         }
         else if (ch=='B')
         {

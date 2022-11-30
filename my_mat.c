@@ -43,11 +43,13 @@ int Floyd_Warshell()
         {
             for (size_t j = 0; j < SIZE; j++)
             {
-                if (adj_mat[i][j] > adj_mat[i][k] + adj_mat[k][j])
-                {
-                    adj_mat[i][j] = adj_mat[i][k] + adj_mat[k][j];
+                if(adj_mat[i][k]!=0 && adj_mat[k][j]!=0)
+                {    
+                    if (adj_mat[i][j] > adj_mat[i][k] + adj_mat[k][j])
+                    {
+                        adj_mat[i][j] = adj_mat[i][k] + adj_mat[k][j];
+                    }
                 }
-                
             }
             
         }
