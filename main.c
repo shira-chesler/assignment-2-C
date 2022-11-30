@@ -10,6 +10,7 @@ int main()
         if (ch=='A')
         {
             initialize();
+            printf("\n");
         }
         else if (ch=='B')
         {
@@ -17,6 +18,7 @@ int main()
             scanf("%d", &i);
             scanf("%d", &j);
             isPath(i, j);
+            printf("\n");
         }
         else //(ch=='C')
         {
@@ -24,6 +26,7 @@ int main()
             scanf("%d", &i);
             scanf("%d", &j);
             shortestPath(i, j);
+            rintf("\n");
         }
         scanf("%c", &ch);
     }
